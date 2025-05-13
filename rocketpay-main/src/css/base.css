@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  font-family: Inter, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  background: #121214;
+
+  display: flex;
+  place-items: center;
+
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+#app {
+  display: grid;
+  justify-content: center;
+  gap: 3.2rem;
+
+  width: 90%;
+  max-width: 42rem;
+  margin: 0 auto;
+
+  padding: 2.8rem 6rem 4rem;
+  background: #202024;
+  border: 0.1rem solid #323238;
+  border-radius: 0.6rem;
+}
+
+#app header {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  display: block;
+  height: 70px;
+  bottom: 0;
+  position: fixed;
+  font-size: 0.55em;
+  text-align: center;
+  line-height: 70px;
+  width: 100%;
+  font-weight: 500;
+}
+footer a {
+  position: relative;
+  text-decoration: none;
+  color: #999;
+  padding-bottom: 2px;
+}
+footer a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 0.1px;
+  background: #cfcfcf;
+  transition: 0.5s ease-out;
+}
+footer a:hover::after {
+  left: 0%;
+  width: 100%;
+}
